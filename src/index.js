@@ -8,6 +8,8 @@ import {
 // We use store.getState() to get our app state from the store
 
 ///test
+store.dispatch(showAll());
+console.log(store.getState());
 
 // console.log('Before showAll 😘: ', store.getState().notes);
 // store.dispatch(showAll());
@@ -20,6 +22,7 @@ import {
 // console.log('Before addNoteHavePayload <>: ', store.getState().notes);
 // store.dispatch(addNoteHavePayload('truongPayload, truongContentPayload'));
 // console.log('After addNoteHavePayload <> : ', store.getState().notes);
+
 // ------ HTML references ------
 let notesUList = document.getElementById('notes');
 let addNoteForm = document.getElementById('add-note');

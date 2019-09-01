@@ -1,6 +1,6 @@
-import { ADD_NOTE_HAVE_PAYLOAD, REMOVE_NOTE } from '../actions/actions';
+import { ADD_NOTE_HAVE_PAYLOAD, REMOVE_NOTE } from '../actions';
 
-function notesReducer(notes = [], action) {
+const notesReducer = (notes = [], action) => {
     switch (action.type) {
         case ADD_NOTE_HAVE_PAYLOAD:
             return [
@@ -17,6 +17,6 @@ function notesReducer(notes = [], action) {
         default:
             return notes;
     }
-}
+};
 
 export default notesReducer;
